@@ -1,0 +1,93 @@
+
+.buttons{
+    background-color:white;
+    color:gray;
+    border:none;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    font-size:14px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.buttons:hover{
+    background-color:rgba(255, 255, 255, 0.738);
+}
+
+.buttons:active{
+    background-color:#49f21a;
+    box-shadow: 0 1px #666;
+    transform: translateY(1px);
+}
+
+.buttons.darkMode{
+    color:gray;
+    background-color:#2F3332;
+    border:none;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    font-size:14px;
+}
+
+.buttons.darkMode:active{
+    background-color:rgb(30, 61, 196);
+    box-shadow: 0 1px #666;
+    transform: translateY(1px);
+
+}
+
+
+.resultBox{
+    background-color:white; 
+    color:gray; 
+    border:none;
+    border-radius:50px; 
+    width: 160px;
+    height: 50px;
+}
+
+.resultBox.DarkThema{
+    background-color:#2F3332; 
+    color:gray; 
+    border:none;
+    border-radius:50px; 
+    width: 160px;
+    height: 50px;
+
+
+}
+
+#header{
+    height: 80px;
+}
+
+
+.githubLogo{
+    padding: 0px;
+    border:none;
+    position: relative;
+    top:4px;
+    
+}
+
+.lightToggleButton{
+    background-color: #95d20700;
+    padding: 0px;
+    border:none;
+    position: relative;
+    left: -80px;
+    top: 5px;
+    float:center; 
+    margin: 40px;
+}
+
+
+.calculator{
+    color: #2F3332;
+}
+
+.calculator.dark{
+    background-color: black;
+}

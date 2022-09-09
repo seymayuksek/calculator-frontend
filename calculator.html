@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <script src="calculator.js"></script>
+
+
+</head>
+
+
+<body style="background-color:#07D2C7;">
+
+    <div id="body-div">
+
+        <div id="header">
+            <h2
+                style="color:white; display:inline; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
+                Calculator</h2>
+
+            <a href="https://github.com" style="float:center; margin: 40px; width: 40px;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+                    class="githubLogo" style="width:20px; height:21px;"></a>
+
+            <button class="lightToggleButton">
+                <input type="image" src="light-mode-icon.png" onclick="darkLightMode()"
+                    style="width:25px; height:24px; float:right;">
+            </button>
+
+        </div>
+
+
+        <table class="calculator">
+
+            <tr>
+                <td colspan="3"> <input class="resultBox" type="text" id="result" disabled /> </td>
+
+                <td> <input type="button" value="C" class="buttons" onclick="clearScreen()"
+                        style="color:white; background-color:#FF2A2A;" /> </td>
+
+            </tr>
+
+
+            <tr>
+                <td> <input type="button" value="1" class="buttons" onclick="display('1')" /> </td>
+                <td> <input type="button" value="2" class="buttons" onclick="display('2')" /> </td>
+                <td> <input type="button" value="3" class="buttons" onclick="display('3')" /> </td>
+                <td> <input type="button" value="+" class="buttons" onclick="display('+')" /> </td>
+            </tr>
+
+            <tr>
+                <td> <input type="button" value="4" class="buttons" onclick="display('4')" /> </td>
+                <td> <input type="button" value="5" class="buttons" onclick="display('5')" /> </td>
+                <td> <input type="button" value="6" class="buttons" onclick="display('6')" /> </td>
+                <td> <input type="button" value="-" class="buttons" onclick="display('-')" /> </td>
+            </tr>
+
+            <tr>
+                <td> <input type="button" value="7" class="buttons" onclick="display('7')" /> </td>
+                <td> <input type="button" value="8" class="buttons" onclick="display('8')" /> </td>
+                <td> <input type="button" value="9" class="buttons" onclick="display('9')" /> </td>
+                <td> <input type="button" value="*" class="buttons" onclick="display('*')" /> </td>
+            </tr>
+
+            <tr>
+                <td> <input type="button" value="/" class="buttons" onclick="display('/')" /> </td>
+                <td> <input type="button" value="0" class="buttons" onclick="display('0')" /> </td>
+                <td> <input type="button" value="." class="buttons" onclick="display('.')" /> </td>
+                <td> <input type="button" value="=" class="buttons" onclick="calculate()" /> </td>
+            </tr>
+
+
+        </table>
+    </div>
+
+
+
+</body>
+
+</html>
